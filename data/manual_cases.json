@@ -1,0 +1,7 @@
+{
+  "cases": [
+    {"id": "R1-door-without-key", "requirement_ids": ["R1"], "fixture": "door_no_key", "actions": ["right"], "expected": [{"field": "keys", "value": 0}, {"field": "doors_open", "value": []}]},
+    {"id": "R2-potion-at-full-hp", "requirement_ids": ["R2"], "fixture": "spawn", "actions": ["use_potion"], "expected": [{"field": "potions", "value": 1}]},
+    {"id": "R4-shop-insufficient-gold", "requirement_ids": ["R4"], "fixture": "shop_no_gold", "actions": ["buy_potion"], "expected": [{"field": "gold", "value": 0}, {"field": "potions", "value": 1}]}
+  ]
+}

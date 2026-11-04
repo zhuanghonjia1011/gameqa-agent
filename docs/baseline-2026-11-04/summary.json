@@ -1,0 +1,189 @@
+{
+  "methods": {
+    "starter": {
+      "trials": 45,
+      "positive_conditions": 40,
+      "detected_conditions": 15,
+      "detection_rate": 0.375,
+      "clean_runs": 5,
+      "clean_runs_with_alerts": 0,
+      "clean_alert_count": 0,
+      "total_steps": 135,
+      "total_compute_seconds": 0.08053370001653093,
+      "median_condition_ms": 1.7552999997860752,
+      "total_case_executions": 135,
+      "clean_case_executions": 15,
+      "clean_passed_cases": 15,
+      "requirements_with_cases": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "total_requirements": 9,
+      "targeted_conditions": 15,
+      "targeted_detected_conditions": 15
+    },
+    "upstream_scripted": {
+      "trials": 45,
+      "positive_conditions": 40,
+      "detected_conditions": 39,
+      "detection_rate": 0.975,
+      "clean_runs": 5,
+      "clean_runs_with_alerts": 0,
+      "clean_alert_count": 0,
+      "total_steps": 23904,
+      "total_compute_seconds": 6.11704550000286,
+      "median_condition_ms": 114.49370000264025
+    }
+  },
+  "by_bug": {
+    "door_ignores_key": {
+      "starter": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    "east_wall_missing": {
+      "starter": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    "potion_no_consume_check": {
+      "starter": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    "shop_allows_negative_gold": {
+      "starter": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    "player_invulnerable": {
+      "starter": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": false,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    "softlock_after_turns": {
+      "starter": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    "key_overflow_crash": {
+      "starter": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    "goal_does_not_win": {
+      "starter": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "upstream_scripted": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    }
+  },
+  "replay_checks": [
+    {
+      "bug": "door_ignores_key",
+      "seed": 0,
+      "case_id": "R1-door-without-key",
+      "exact_match": true
+    },
+    {
+      "bug": "potion_no_consume_check",
+      "seed": 0,
+      "case_id": "R2-potion-at-full-hp",
+      "exact_match": true
+    },
+    {
+      "bug": "shop_allows_negative_gold",
+      "seed": 0,
+      "case_id": "R4-shop-insufficient-gold",
+      "exact_match": true
+    }
+  ]
+}
